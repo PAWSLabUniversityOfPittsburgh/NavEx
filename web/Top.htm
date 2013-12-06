@@ -1,0 +1,56 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN"
+"http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+<title>Untitled Document</title>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+</head>
+<script language="javascript">
+<!--
+	function change1()
+	{
+		var doc = top.frames[0];
+		document.getElementById('module345').innerHTML = "<img src='system/avail.gif'></img>";
+		doc.change("<img src='system/avail.gif'></img>");
+	}
+	function change(param)
+	{
+		if(param==-1)
+		{
+			document.getElementById('frameControl').innerHTML = 
+				"<a onClick='change(1);'><img src='system/right.gif'></img></a>";
+			top.document.getElementById('frameset').cols = '0,*';
+			top.document.getElementById('left').noResize = 'true';
+		}
+		else if(param==1)
+		{
+			document.getElementById('frameControl').innerHTML = 
+				"<a onClick='change(-1);'><img src='system/left.gif'></img></a>";
+			top.document.getElementById('frameset').cols = '250,*';
+			top.document.getElementById('left').noResize = null;
+		}
+	}
+//-->
+</script>
+
+<body>
+
+<a onClick="change1();">Top</a>
+
+<table width="100%" height="16" border="0" cellpadding="0" cellspacing="2">
+  <!--DWLayoutTable-->
+  <tr>
+    <td width="16" >
+		<div id=frameControl><a onClick='change(-1);'><img src='system/left.gif'></img></a></div>
+	</td>
+    <td width="16">
+		<div id=module345><a title="TTTT" href="http://www.pitt.edu" target="_top"><img src='system/navail.gif'></img></a></div>
+	</td>
+    <td width="100%"></td>
+	<td width="16">
+		<div id=module345><img src='system/help.gif' alt="test"></img></div>
+	</td>
+  </tr>
+</table>
+</body>
+</html>

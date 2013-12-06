@@ -1,0 +1,9 @@
+New Factor - Karel score - programming ability
+	Programming ability - pre test (Sergey)
+
+Corellation b/w navigation and score improvement from M till F 
+	such improvement is Fscore/Mscore or (M-F)/M (ask Sergey how)
+
+Isolate Final Score that is related to Programming Examples
+
+Navigation multiply by factor - hardness of HW as points for it

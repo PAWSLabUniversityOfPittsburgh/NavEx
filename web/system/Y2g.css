@@ -1,0 +1,114 @@
+.ModuleTitle {
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: x-large;
+	font-weight: bold;
+	text-align: center;
+}
+.ModuleLink {
+	font-family: "Times New Roman", Times, serif;
+
+	text-align: left;
+}
+.ModuleLinkHighligh {
+	font-family: "Times New Roman", Times, serif;
+	text-align: left;
+	font-weight: bold;
+}
+.ModuleCurrentCell {
+	background-color: #CCCCCC;
+}
+.Button {
+	cursor: hand;
+	text-align: center;
+	vertical-align: middle;
+}
+.Icon {
+	cursor: hand;
+	text-align: center;
+	vertical-align: middle;
+}
+.SocioBG1x5
+{
+	background-image: url(bg-1-green.gif);
+	text-align: center;
+	vertical-align: middle;
+}
+.SocioBG2x5
+{
+	background-image: url(bg-2-green.gif);
+	text-align: center;
+	vertical-align: middle;
+}
+.SocioBG3x5
+{
+	background-image: url(bg-3-green.gif);
+	text-align: center;
+	vertical-align: middle;
+}
+.SocioBG4x5
+{
+	background-image: url(bg-4-green.gif);
+	text-align: center;
+	vertical-align: middle;
+}
+.SocioBG5x5
+{
+	background-image: url(bg-5-green.gif);
+	text-align: center;
+	vertical-align: middle;
+}
+.SocioIC1x5
+{
+	background-image: url(ic-1-green.gif);
+	text-align: center;
+	vertical-align: middle;
+	background-repeat: no-repeat;
+	background-position: center center;
+	margin: 0px;
+	padding: 0px;
+}
+.SocioIC2x5
+{
+	background-image: url(ic-2-green.gif);
+	text-align: center;
+	vertical-align: middle;
+	background-repeat: no-repeat;
+	background-position: center center;
+	margin: 0px;
+	padding: 0px;
+}
+.SocioIC3x5
+{
+	background-image: url(ic-3-green.gif);
+	text-align: center;
+	vertical-align: middle;
+	background-repeat: no-repeat;
+	background-position: center center;
+	margin: 0px;
+	padding: 0px;
+}
+.SocioIC4x5
+{
+	background-image: url(ic-4-green.gif);
+	text-align: center;
+	vertical-align: middle;
+	background-repeat: no-repeat;
+	background-position: center center;
+	margin: 0px;
+	padding: 0px;
+}
+.SocioIC5x5
+{
+	background-image: url(ic-5-green.gif);
+	text-align: center;
+	vertical-align: middle;
+	background-repeat: no-repeat;
+	background-position: center center;
+	margin: 0px;
+	padding: 0px;
+}
+.Code
+{
+	font-family: "Courier New", Courier, mono;
+	font-size: small;
+}

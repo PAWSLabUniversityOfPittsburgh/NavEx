@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Context debug="1" reloadable="true">
+
+	<!-- Access to Database -->	
+	<Resource name="jdbc/main"
+		auth="Container"
+		type="javax.sql.DataSource" 
+		username="student" 
+		password="student"
+		driverClassName="com.mysql.jdbc.Driver" 
+		url="jdbc:mysql://localhost/pservice?autoReconnect=true"
+		maxActive="1000" 
+		maxIdle="50"
+		maxWait="15000"
+		removeAbandoned="true" 
+		logAbandoned="true" />
+
+</Context>

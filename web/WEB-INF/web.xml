@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="ISO-8859-2"?>
+
+<web-app id="WebApp_ID" version="2.4" xmlns="http://java.sun.com/xml/ns/j2ee" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://java.sun.com/xml/ns/j2ee http://java.sun.com/xml/ns/j2ee/web-app_2_4.xsd">
+	<display-name>NavEx</display-name>
+	<description>Navigation to Examples</description>
+
+	<!-- /====================\ -->
+	<!-- | Context parameters | -->
+	<!-- \====================/ -->
+
+	<context-param>
+		<param-name>driver</param-name>
+		<param-value>com.mysql.jdbc.Driver</param-value>
+	</context-param>
+	<context-param>
+		<param-name>url</param-name>
+		<param-value>jdbc:mysql://localhost:3306/y2</param-value>
+	</context-param> 
+	<context-param>
+		<param-name>user</param-name>
+		<param-value>student</param-value>
+	</context-param>
+	<context-param>
+		<param-name>password</param-name>
+		<param-value>student</param-value>
+	</context-param>
+	<context-param>
+		<param-name>ummanager</param-name>
+<!--		<param-value>http://localhost:8080/um/servlet/UMManager</param-value> -->
+		<param-value>http://localhost:8080/cbum/ReportManager</param-value> 
+<!--		<param-value>http://kt2.exp.sis.pitt.edu:8080/um/servlet/UMManager</param-value>-->
+	</context-param>
+	<context-param>
+		<param-name>um</param-name>
+		<param-value>http://localhost:8080/cbum/um</param-value> 
+<!--		<param-value>http://localhost:8080/um/servlet/um</param-value> -->
+<!--		<param-value>http://kt2.exp.sis.pitt.edu:8080/um/servlet/um</param-value> -->
+	</context-param>
+	<context-param>
+		<param-name>advise2d_codebase</param-name>
+		<param-value>http://ir.exp.sis.pitt.edu/advise2d/applet</param-value>
+	</context-param>
+
+	<!-- /========================\ -->
+	<!-- | Servlet configurations | -->
+	<!-- \========================/ -->
+	<servlet>
+		<servlet-name>Show</servlet-name>
+		<servlet-class>edu.pitt.sis.paws.navex.Show</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>Show</servlet-name>
+		<url-pattern>/Show</url-pattern>
+	</servlet-mapping> 
+
+	<servlet>
+		<servlet-name>jspLeft</servlet-name>
+		<jsp-file>/WEB-INF/left.jsp</jsp-file>
+	</servlet> 
+	<servlet-mapping>
+		<servlet-name>jspLeft</servlet-name>
+		<url-pattern>/jspLeft</url-pattern>
+	</servlet-mapping>
+
+	<servlet>
+		<servlet-name>jspTop</servlet-name>
+		<jsp-file>/WEB-INF/top.jsp</jsp-file>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>jspTop</servlet-name>
+		<url-pattern>/jspTop</url-pattern>
+	</servlet-mapping>
+
+	<servlet>
+		<servlet-name>navex_advise2d</servlet-name>
+		<jsp-file>/WEB-INF/navex_advise2d.jsp</jsp-file>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>navex_advise2d</servlet-name>
+		<url-pattern>/navex_advise2d</url-pattern>
+	</servlet-mapping> 
+
+	<servlet>
+		<servlet-name>ShowMainKT</servlet-name>
+		<servlet-class>edu.pitt.sis.paws.navex.ShowMainKT</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>ShowMainKT</servlet-name>
+		<url-pattern>/ShowMainKT</url-pattern>
+	</servlet-mapping>
+
+	<servlet>
+		<servlet-name>ShowMainKTSub</servlet-name>
+		<servlet-class>edu.pitt.sis.paws.navex.ShowMainKTSub</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>ShowMainKTSub</servlet-name>
+		<url-pattern>/ShowMainKTSub</url-pattern>
+	</servlet-mapping> 
+	
+	<servlet>
+		<servlet-name>jspShow</servlet-name>
+		<jsp-file>/WEB-INF/show.jsp</jsp-file>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>jspShow</servlet-name>
+		<url-pattern>/jspShow</url-pattern>
+	</servlet-mapping> 
+	
+</web-app>

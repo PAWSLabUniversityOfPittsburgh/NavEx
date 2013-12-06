@@ -1,0 +1,31 @@
+<HTML>
+ 
+<HEAD>
+	<META HTTP-EQUIV="Pragma" CONTENT="no-cache">
+  <TITLE>eLearning authentication</TITLE>
+</HEAD>
+<BODY>
+
+<H1 align="center">eLearning authentication page</H1>
+<HR>
+<CENTER>
+<!-- /eLearning/servlet/access -->
+<FORM ACTION="j_security_check" METHOD="POST">
+	<table width="30%" border="0" cellspacing="2" cellpadding="2">
+		<tr> 
+			<td width="23%">Login</td>
+			<td width="77%"><input name="j_username" type="text" value="" size="25" maxlength="10"></td>
+		</tr>
+		<tr> 
+			<td>Password</td>
+			<td><input name="j_password" type="password" value="" size="25" maxlength="10"></td>
+		</tr>
+		<tr> 
+			<td colspan="2"><input type="Submit" value="Login"></td>
+		</tr>
+	</table>
+</FORM>
+</CENTER>
+
+</BODY>
+</HTML>
